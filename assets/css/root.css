@@ -1,0 +1,63 @@
+:root {
+  /* ----font-size------ */
+  --fs-xl: 64px;
+  --fs-lg: 56px;
+  --fs-md: 20px;
+  --fs-sm: 16px;
+}
+/* =======================font-size======================== */
+.fs_xl {
+  font-size: var(--fs-xl);
+}
+
+.fs_lg {
+  font-size: var(--fs-lg);
+}
+
+.fs_md {
+  font-size: var(--fs-md);
+}
+
+.fs_sm {
+  font-size: var(--fs-sm);
+}
+/* ============================font-family================== */
+.ff_sunflower {
+  font-family: "Sunflower", sans-serif;
+}
+.ff_space_grotesk {
+  font-family: "Space Grotesk", sans-serif;
+}
+/* ========================color====================== */
+.black_01{
+    color: #040404 !important;
+}
+
+/* ===========================media================== */
+@media (max-width: 1100px) {
+  :root {
+    --fs-xl: 57px;
+  }
+}
+@media (max-width: 992px) {
+  :root {
+    --fs-xl:55px;
+    --fs-lg: 53px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --fs-xl: 53px;
+    --fs-lg: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  :root {
+    --fs-xl: 40px;
+    --fs-lg: 35px;
+    --fs-md: 18px;
+    --fs-sm: 16px;
+  }
+}
