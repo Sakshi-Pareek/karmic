@@ -103,6 +103,7 @@
   background-image: url(../images/png/box_line.png) !important;
   background-color: #040404;
   z-index: 10 !important;
+  background-size: 100% 100%;
 }
 .transition_2s {
   transition: all 0.2s linear;
@@ -135,12 +136,15 @@
   height: 2px;
   background-color: #ffffff;
   bottom: 0;
-}
-
-.nav_line:hover::after {
-  width: 100%;
   transition: all 300ms linear;
 }
+.nav_line:hover::after {
+  width: 100%;
+}
+.gap_40{
+  gap: 40px;
+}
+  
 .contact_btn {
   display: inline-flex;
   padding: 12px 32px;
@@ -170,11 +174,11 @@
   align-items: center;
   gap: 10px;
   border-radius: 82px;
-  border: 1px solid #fff;
-  background: transparent;
+  border: 1px solid transparent;
+  background: white;
 }
-.get_btn:hover > svg path {
-  fill: #040404 !important;
+.get_btn:hover{
+  box-shadow: 0px 5px 10px white; 
 }
 .read_btn {
   display: flex;
@@ -194,7 +198,7 @@
 }
 .web_line::after {
   content: "";
-  width: 170px;
+  width: 94%;
   height: 2px;
   transform: rotate(-3.516deg);
   flex-shrink: 0;
@@ -204,23 +208,22 @@
   top: 95%;
   left: 22%;
 }
-
 .web_line::before {
   content: "";
-  width: 177px;
-  height: 2px;
-  transform: rotate(-4.484deg);
-  flex-shrink: 0;
-  background-color: #fff;
-  stroke-width: 1px;
-  position: absolute;
-  top: 62%;
-  left: 30%;
+    width: 94%;
+    height: 2px;
+    transform: rotate(-4deg);
+    flex-shrink: 0;
+    background-color: #fff;
+    stroke-width: 1px;
+    position: absolute;
+    top: -10%;
+    left: 11%;
 }
 
 .arrow_img {
-  -webkit-animation: popupdown 1.5s infinite linear;
-  animation: popupdown 1.5s linear infinite;
+  -webkit-animation: popupdown 2s infinite linear;
+  animation: popupdown 2s linear infinite;
 }
 
 @-webkit-keyframes popupdown {
@@ -230,8 +233,8 @@
   }
 
   50% {
-    -webkit-transform: translateY(15%);
-    transform: translateY(15%);
+    -webkit-transform: translateY(18%);
+    transform: translateY(18%);
   }
 
   100% {
@@ -239,23 +242,24 @@
     transform: translateY(0);
   }
 }
+
 /* ====================================upcoming============================================= */
 .upcoming_line::after {
   content: "";
-  width: 344px;
+  width: 68%;
   height: 2px;
-  transform: rotate(-2.516deg);
+  transform: rotate(-3.516deg);
   flex-shrink: 0;
   stroke-width: 1px;
   background-color: #fff;
   position: absolute;
-  top: 97%;
-  left: 32%;
+  top: 110%;
+  left: 10%;
 }
 
 .upcoming_line::before {
   content: "";
-  width: 344px;
+  width: 75%;
   height: 2px;
   transform: rotate(-3.484deg);
   flex-shrink: 0;
@@ -263,7 +267,7 @@
   stroke-width: 1px;
   position: absolute;
   top: -26%;
-  left: 39%;
+  left: 27%;
 }
 .upcoming_card {
   border-radius: 12px;
@@ -310,7 +314,7 @@
 }
 .service_line::after {
   content: "";
-  width: 344px;
+  width: 144%;
   height: 2px;
   transform: rotate(-3.516deg);
   flex-shrink: 0;
@@ -318,12 +322,12 @@
   background-color: #fff;
   position: absolute;
   top: 107%;
-  left: 31%;
+  left: -45%;
 }
 
 .service_line::before {
   content: "";
-  width: 344px;
+  width: 141%;
   height: 2px;
   transform: rotate(-3.484deg);
   flex-shrink: 0;
@@ -331,7 +335,7 @@
   stroke-width: 1px;
   position: absolute;
   top: -32%;
-  left: 40%;
+  left: -5%;
 }
 .service_card {
   padding: 20px;
@@ -393,20 +397,20 @@
 }
 .Project_line::after {
   content: "";
-  width: 344px;
+  width: 137%;
   height: 2px;
   transform: rotate(-3.516deg);
   flex-shrink: 0;
   stroke-width: 1px;
   background-color: #000 !important;
   position: absolute;
-  top: 102%;
-  left: 30%;
+  top: 108%;
+  left: -38%;
 }
 
 .Project_line::before {
   content: "";
-  width: 344px;
+  width: 127%;
   height: 2px;
   transform: rotate(-3.484deg);
   flex-shrink: 0;
@@ -414,7 +418,7 @@
   stroke-width: 1px;
   position: absolute;
   top: -18%;
-  left: 39%;
+  left: -1%;
 }
 .project_blur {
   height: 100%;
@@ -491,28 +495,50 @@
 }
 .about_line::after {
   content: "";
-  width: 320px;
+  width: 185%;
   height: 2px;
   transform: rotate(-3.516deg);
   flex-shrink: 0;
   stroke-width: 1px;
   background-color: white !important;
   position: absolute;
-  top: 102%;
-  left: 30%;
+  top: 112%;
+  left: -69%;
 }
 
 .about_line::before {
   content: "";
-  width: 320px;
+  width: 165%;
   height: 2px;
   transform: rotate(-3.484deg);
   flex-shrink: 0;
   background-color: white !important;
   stroke-width: 1px;
   position: absolute;
-  top: -18%;
-  left: 39%;
+  top: -23%;
+  left: -19%;
+}
+.glass_hover {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.glass_hover::before {
+  content: "";
+  background: rgb(255, 255, 255, 0.4);
+  width: 50%;
+  height: 100%;
+  left: -125%;
+  top: 0%;
+  transform: skew(45deg);
+  filter: blur(30px);
+  position: absolute;
+  transition: left 0.5s ease-in-out;
+}
+
+.glass_hover:hover::before {
+  left: 150%;
 }
 /* ==============================footer============================== */
 .border_top {
@@ -576,16 +602,11 @@
   .left-0 {
     left: 0;
   }
-  .max_w_500 {
-    max-width: unset;
+  .hero_bg {
+    background-size: cover;
   }
-  .max_w_741 {
-    max-width: unset;
-  }
-  .signatuer3 {
-    position: absolute;
-    bottom: 0;
-    left: 15px;
+  .gap_40{
+    gap: 30px;
   }
 }
 @media (min-width: 768px) and (max-width: 4000px) {
@@ -602,56 +623,17 @@
   .max_w_560 {
     max-width: 560px;
   }
+  
 }
 @media (min-width: 375px) and (max-width: 768px) {
   .w_200 {
     max-width: 180px;
   }
-  .upcoming_line::after {
-    width: 228px;
-    transform: rotate(-1.516deg);
-    top: 97%;
-    left: 13%;
+
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  .fs_24{
+    font-size: 24px !important;
   }
 
-  .upcoming_line::before {
-    width: 230px;
-    transform: rotate(-3.484deg);
-    top: -38%;
-    left: 29%;
-  }
-  .service_line::after {
-    width: 163px;
-    transform: rotate(-4.516deg);
-    top: 102%;
-    left: 22%;
-  }
-
-  .service_line::before {
-    width: 123px;
-    transform: rotate(-4.484deg);
-    top: -26%;
-    left: 40%;
-  }
-  .Project_line::after {
-    width: 209px;
-    transform: rotate(-3.516deg);
-    top: 102%;
-    left: 30%;
-  }
-
-  .Project_line::before {
-    width: 170px;
-    transform: rotate(-3.484deg);
-    top: -18%;
-    left: 35%;
-  }
-  .about_line::after {
-    width: 141px;
-    left: 28%;
-  }
-
-  .about_line::before {
-    width: 139px;
-  }
 }

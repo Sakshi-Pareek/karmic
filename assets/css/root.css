@@ -36,27 +36,27 @@
 /* ===========================media================== */
 @media (max-width: 1100px) {
   :root {
-    --fs-xl: 57px;
+    --fs-xl: 60px;
   }
 }
 @media (max-width: 992px) {
   :root {
     --fs-xl:55px;
-    --fs-lg: 53px;
+    --fs-lg: 50px;
   }
 }
 
 @media (max-width: 768px) {
   :root {
-    --fs-xl: 53px;
-    --fs-lg: 50px;
+    --fs-xl: 50px;
+    --fs-lg: 45px;
   }
 }
 
 @media (max-width: 576px) {
   :root {
-    --fs-xl: 40px;
-    --fs-lg: 35px;
+    --fs-xl: 41px;
+    --fs-lg: 40px;
     --fs-md: 18px;
     --fs-sm: 16px;
   }
