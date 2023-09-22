@@ -594,13 +594,13 @@
     background-color: grey;
     position: fixed;
     top: 0;
-    left: -100%;
+    right: -100%;
     transition: all 200ms linear;
     z-index: 1;
   }
 
-  .left-0 {
-    left: 0;
+  .right-0 {
+    right: 0;
   }
   .hero_bg {
     background-size: cover;

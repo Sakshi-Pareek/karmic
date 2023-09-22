@@ -3,7 +3,7 @@
 let label = document.querySelector("#label") 
 let navbox = document.querySelector(".navbox") 
 label.addEventListener("click" , function (){
-    navbox.classList.toggle("left-0")
+    navbox.classList.toggle("right-0")
 })
 function showNav() {
     document.body.classList.toggle('overflow-hidden')
@@ -135,7 +135,7 @@ $('.project_slider').slick({
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 577,
         settings: {
           infinite: true,
           centerMode:true,

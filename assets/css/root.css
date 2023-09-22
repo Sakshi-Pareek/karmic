@@ -56,7 +56,7 @@
 @media (max-width: 576px) {
   :root {
     --fs-xl: 41px;
-    --fs-lg: 40px;
+    --fs-lg: 35px;
     --fs-md: 18px;
     --fs-sm: 16px;
   }
